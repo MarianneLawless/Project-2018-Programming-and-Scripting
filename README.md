@@ -39,158 +39,48 @@ In 1936 Edgar Anderson collected, 50 samples of three different types of iris, o
 The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
 Iris versicolor, Iris virginica
 
-### Fisher's Iris Data
-Dataset Order 	Sepal length 	Sepal width 	Petal length 	Petal width 	Species
-1 	5.1 	3.5 	1.4 	0.2 	I. setosa
-2 	4.9 	3.0 	1.4 	0.2 	I. setosa
-3 	4.7 	3.2 	1.3 	0.2 	I. setosa
-4 	4.6 	3.1 	1.5 	0.2 	I. setosa
-5 	5.0 	3.6 	1.4 	0.3 	I. setosa
-6 	5.4 	3.9 	1.7 	0.4 	I. setosa
-7 	4.6 	3.4 	1.4 	0.3 	I. setosa
-8 	5.0 	3.4 	1.5 	0.2 	I. setosa
-9 	4.4 	2.9 	1.4 	0.2 	I. setosa
-10 	4.9 	3.1 	1.5 	0.1 	I. setosa
-11 	5.4 	3.7 	1.5 	0.2 	I. setosa
-12 	4.8 	3.4 	1.6 	0.2 	I. setosa
-13 	4.8 	3.0 	1.4 	0.1 	I. setosa
-14 	4.3 	3.0 	1.1 	0.1 	I. setosa
-15 	5.8 	4.0 	1.2 	0.2 	I. setosa
-16 	5.7 	4.4 	1.5 	0.4 	I. setosa
-17 	5.4 	3.9 	1.3 	0.4 	I. setosa
-18 	5.1 	3.5 	1.4 	0.3 	I. setosa
-19 	5.7 	3.8 	1.7 	0.3 	I. setosa
-20 	5.1 	3.8 	1.5 	0.3 	I. setosa
-21 	5.4 	3.4 	1.7 	0.2 	I. setosa
-22 	5.1 	3.7 	1.5 	0.4 	I. setosa
-23 	4.6 	3.6 	1.0 	0.2 	I. setosa
-24 	5.1 	3.3 	1.7 	0.5 	I. setosa
-25 	4.8 	3.4 	1.9 	0.2 	I. setosa
-26 	5.0 	3.0 	1.6 	0.2 	I. setosa
-27 	5.0 	3.4 	1.6 	0.4 	I. setosa
-28 	5.2 	3.5 	1.5 	0.2 	I. setosa
-29 	5.2 	3.4 	1.4 	0.2 	I. setosa
-30 	4.7 	3.2 	1.6 	0.2 	I. setosa
-31 	4.8 	3.1 	1.6 	0.2 	I. setosa
-32 	5.4 	3.4 	1.5 	0.4 	I. setosa
-33 	5.2 	4.1 	1.5 	0.1 	I. setosa
-34 	5.5 	4.2 	1.4 	0.2 	I. setosa
-35 	4.9 	3.1 	1.5 	0.2 	I. setosa
-36 	5.0 	3.2 	1.2 	0.2 	I. setosa
-37 	5.5 	3.5 	1.3 	0.2 	I. setosa
-38 	4.9 	3.6 	1.4 	0.1 	I. setosa
-39 	4.4 	3.0 	1.3 	0.2 	I. setosa
-40 	5.1 	3.4 	1.5 	0.2 	I. setosa
-41 	5.0 	3.5 	1.3 	0.3 	I. setosa
-42 	4.5 	2.3 	1.3 	0.3 	I. setosa
-43 	4.4 	3.2 	1.3 	0.2 	I. setosa
-44 	5.0 	3.5 	1.6 	0.6 	I. setosa
-45 	5.1 	3.8 	1.9 	0.4 	I. setosa
-46 	4.8 	3.0 	1.4 	0.3 	I. setosa
-47 	5.1 	3.8 	1.6 	0.2 	I. setosa
-48 	4.6 	3.2 	1.4 	0.2 	I. setosa
-49 	5.3 	3.7 	1.5 	0.2 	I. setosa
-50 	5.0 	3.3 	1.4 	0.2 	I. setosa
-51 	7.0 	3.2 	4.7 	1.4 	I. versicolor
-52 	6.4 	3.2 	4.5 	1.5 	I. versicolor
-53 	6.9 	3.1 	4.9 	1.5 	I. versicolor
-54 	5.5 	2.3 	4.0 	1.3 	I. versicolor
-55 	6.5 	2.8 	4.6 	1.5 	I. versicolor
-56 	5.7 	2.8 	4.5 	1.3 	I. versicolor
-57 	6.3 	3.3 	4.7 	1.6 	I. versicolor
-58 	4.9 	2.4 	3.3 	1.0 	I. versicolor
-59 	6.6 	2.9 	4.6 	1.3 	I. versicolor
-60 	5.2 	2.7 	3.9 	1.4 	I. versicolor
-61 	5.0 	2.0 	3.5 	1.0 	I. versicolor
-62 	5.9 	3.0 	4.2 	1.5 	I. versicolor
-63 	6.0 	2.2 	4.0 	1.0 	I. versicolor
-64 	6.1 	2.9 	4.7 	1.4 	I. versicolor
-65 	5.6 	2.9 	3.6 	1.3 	I. versicolor
-66 	6.7 	3.1 	4.4 	1.4 	I. versicolor
-67 	5.6 	3.0 	4.5 	1.5 	I. versicolor
-68 	5.8 	2.7 	4.1 	1.0 	I. versicolor
-69 	6.2 	2.2 	4.5 	1.5 	I. versicolor
-70 	5.6 	2.5 	3.9 	1.1 	I. versicolor
-71 	5.9 	3.2 	4.8 	1.8 	I. versicolor
-72 	6.1 	2.8 	4.0 	1.3 	I. versicolor
-73 	6.3 	2.5 	4.9 	1.5 	I. versicolor
-74 	6.1 	2.8 	4.7 	1.2 	I. versicolor
-75 	6.4 	2.9 	4.3 	1.3 	I. versicolor
-76 	6.6 	3.0 	4.4 	1.4 	I. versicolor
-77 	6.8 	2.8 	4.8 	1.4 	I. versicolor
-78 	6.7 	3.0 	5.0 	1.7 	I. versicolor
-79 	6.0 	2.9 	4.5 	1.5 	I. versicolor
-80 	5.7 	2.6 	3.5 	1.0 	I. versicolor
-81 	5.5 	2.4 	3.8 	1.1 	I. versicolor
-82 	5.5 	2.4 	3.7 	1.0 	I. versicolor
-83 	5.8 	2.7 	3.9 	1.2 	I. versicolor
-84 	6.0 	2.7 	5.1 	1.6 	I. versicolor
-85 	5.4 	3.0 	4.5 	1.5 	I. versicolor
-86 	6.0 	3.4 	4.5 	1.6 	I. versicolor
-87 	6.7 	3.1 	4.7 	1.5 	I. versicolor
-88 	6.3 	2.3 	4.4 	1.3 	I. versicolor
-89 	5.6 	3.0 	4.1 	1.3 	I. versicolor
-90 	5.5 	2.5 	4.0 	1.3 	I. versicolor
-91 	5.5 	2.6 	4.4 	1.2 	I. versicolor
-92 	6.1 	3.0 	4.6 	1.4 	I. versicolor
-93 	5.8 	2.6 	4.0 	1.2 	I. versicolor
-94 	5.0 	2.3 	3.3 	1.0 	I. versicolor
-95 	5.6 	2.7 	4.2 	1.3 	I. versicolor
-96 	5.7 	3.0 	4.2 	1.2 	I. versicolor
-97 	5.7 	2.9 	4.2 	1.3 	I. versicolor
-98 	6.2 	2.9 	4.3 	1.3 	I. versicolor
-99 	5.1 	2.5 	3.0 	1.1 	I. versicolor
-100 	5.7 	2.8 	4.1 	1.3 	I. versicolor
-101 	6.3 	3.3 	6.0 	2.5 	I. virginica
-102 	5.8 	2.7 	5.1 	1.9 	I. virginica
-103 	7.1 	3.0 	5.9 	2.1 	I. virginica
-104 	6.3 	2.9 	5.6 	1.8 	I. virginica
-105 	6.5 	3.0 	5.8 	2.2 	I. virginica
-106 	7.6 	3.0 	6.6 	2.1 	I. virginica
-107 	4.9 	2.5 	4.5 	1.7 	I. virginica
-108 	7.3 	2.9 	6.3 	1.8 	I. virginica
-109 	6.7 	2.5 	5.8 	1.8 	I. virginica
-110 	7.2 	3.6 	6.1 	2.5 	I. virginica
-111 	6.5 	3.2 	5.1 	2.0 	I. virginica
-112 	6.4 	2.7 	5.3 	1.9 	I. virginica
-113 	6.8 	3.0 	5.5 	2.1 	I. virginica
-114 	5.7 	2.5 	5.0 	2.0 	I. virginica
-115 	5.8 	2.8 	5.1 	2.4 	I. virginica
-116 	6.4 	3.2 	5.3 	2.3 	I. virginica
-117 	6.5 	3.0 	5.5 	1.8 	I. virginica
-118 	7.7 	3.8 	6.7 	2.2 	I. virginica
-119 	7.7 	2.6 	6.9 	2.3 	I. virginica
-120 	6.0 	2.2 	5.0 	1.5 	I. virginica
-121 	6.9 	3.2 	5.7 	2.3 	I. virginica
-122 	5.6 	2.8 	4.9 	2.0 	I. virginica
-123 	7.7 	2.8 	6.7 	2.0 	I. virginica
-124 	6.3 	2.7 	4.9 	1.8 	I. virginica
-125 	6.7 	3.3 	5.7 	2.1 	I. virginica
-126 	7.2 	3.2 	6.0 	1.8 	I. virginica
-127 	6.2 	2.8 	4.8 	1.8 	I. virginica
-128 	6.1 	3.0 	4.9 	1.8 	I. virginica
-129 	6.4 	2.8 	5.6 	2.1 	I. virginica
-130 	7.2 	3.0 	5.8 	1.6 	I. virginica
-131 	7.4 	2.8 	6.1 	1.9 	I. virginica
-132 	7.9 	3.8 	6.4 	2.0 	I. virginica
-133 	6.4 	2.8 	5.6 	2.2 	I. virginica
-134 	6.3 	2.8 	5.1 	1.5 	I. virginica
-135 	6.1 	2.6 	5.6 	1.4 	I. virginica
-136 	7.7 	3.0 	6.1 	2.3 	I. virginica
-137 	6.3 	3.4 	5.6 	2.4 	I. virginica
-138 	6.4 	3.1 	5.5 	1.8 	I. virginica
-139 	6.0 	3.0 	4.8 	1.8 	I. virginica
-140 	6.9 	3.1 	5.4 	2.1 	I. virginica
-141 	6.7 	3.1 	5.6 	2.4 	I. virginica
-142 	6.9 	3.1 	5.1 	2.3 	I. virginica
-143 	5.8 	2.7 	5.1 	1.9 	I. virginica
-144 	6.8 	3.2 	5.9 	2.3 	I. virginica
-145 	6.7 	3.3 	5.7 	2.5 	I. virginica
-146 	6.7 	3.0 	5.2 	2.3 	I. virginica
-147 	6.3 	2.5 	5.0 	1.9 	I. virginica
-148 	6.5 	3.0 	5.2 	2.0 	I. virginica
-149 	6.2 	3.4 	5.4 	2.3 	I. virginica
-150 	5.9 	3.0 	5.1 	1.8 	I. virginica
+In 1936 using this data collected, Ronal Fisher wrote a paper on the linear discriminant analysis, which could be accurately distinguish the three types from one another using only the sepal and petal measurements.
+
+In other words, Fisher coined this as a supervised learning problem, in which we are attempting to predict the species of a particular iris using the available data collected.
+
+This is supervised learning, where we are attempting to learn the relationship between the data, namely the iris measurements, and the outcome, which is the species of iris. If this was unlabelled data, meaning that we only had the measurements not the species, we might coin this as unsupervised learning by attempting to cluster the samples, into meaningful groups.
+
+Iris data set has become a famous data set for machine learning, because it turns out to be an easy supervised learning task, there is a strong relationship between the species and the measurements, and thus various machine learning modules can accurately predict the species given the measurements. The data set is described in more depth in the UCI learning repository, which is a repository of hundreds of data sets suitable for machine learning tasks. 
+
+Because the iris data is so popular in machine learning it is frequently used in python, lets load into python and examine it, so we can use a machine learning model, so we can predict the species using the iris measurements.
+
+This data set consists of one hundred and fifty rows with five columns, including the name of the species of the iris type. Each row represents one flower.
+The other four columns each contain, the four measurements collected.
+## Machine Learning Terminology
+Each row is known as an observation, some equivalent terms are sample, examples, instance and records. Thus, the iris data set has one hundred and fifty observations.
+Each column is known as a feature, some equivalent terms are predictor, attribute, independent variable, input, regressor and covariate. The iris data set has four features. 
+
+Let’s put out an attribute of the iris object called the feature names, as you can imagine this represents the names of the four features, you can think of this as column headings for the data.
+Now let’s put out two more attributes called target and target names, the target represents what we are going to predict, which is a zero, representing zetosa, and one representing versolic, or two representing virginica.
+Some equivalent terms for target are response, outcome, label and dependent variable. 
+WE will use response.
+Two types of supervised learning, which are classification and regression.
+A classification problem, is one in which the response been predicted is categorical, meaning that its values are in a finite unordered set, predicting the species of iris is an example of a classification problem as is predicting whether an email is spam or ham.
+In contrast a regression problem, is one in which the response been predicted is ordered and continuous, such as the price of a house or the height of a person.
+
+When looking at iris target, you might be wondering how you can tell, that this is a classification problem and not a regression problem, since all you can see is the number 0, 1 and 2. The answer is you cannot tell the difference, as a machine learning practioner, you have to understand how your data is encoded and decide whether your response variable is suited for regression or classification.
+In this case we know that the numbers 0, 1, and 2 represent unordered categories, unless we know to use classification techniques and not regression techniques in to solve this problem, if you remember the  first video in the series we talked about how the first step in machine learning is for the model to learn the relationship between the features and the response we actually do this in the next video, but we have to make  sure that the features and the response are in the appropriate form.
+There are four key requirements needed, so keep in mind as follows; first the features and the response should be passed into the machine learning model, as separate objects. 
+Iris dot data 
+Iris dot target fulfil this condition, since they are stored separately, secondly python is only expecting to see numbers in the features and response objects, this is exactly why iris target is stored as zeros, ones and twos, instead of the strings soTosa, Versicolor and virginica in python the response object should always be numeric regardless whether it’s a regression problem or classification problem, also the feature and the response should be stored as numpy arrays.
+
+Numpy is a library for scientific computing that implements a homogenous multi-dimensional array known as an ende array that has been optimized for fast computation it out that both iris dot data and iris dot target are already stored as nd arrays, fourth the feature and response objects are expected to have certain shapes, specifically the feature object should have two dimensions, in which the first dimension, represented by rows is the number of observations and the second dimension is represented by columns is the number of features all numpy arrays have a shape attribute so we can verify the shape of iris data is 150 by 4. The response object is expected to have a single dimension and that dimension should have the same magnitude as the first dimension of the feature object in other words there should be one response corresponding to each observation, we can indeed verify that the shape of iris dot target is simply 150. 
+L refers to the long data type that python is using to represent the data, we have now verified that iris dot data and iris dot target meet all the requirements needed for feature and response object to run in python.
+The feature of python is the feature data to be stored as a variant in X and for the response data to be stored in a variant named Y, thus we will store iris dot data in X and iris dot target in Y. 
+
+Numpy can be used to speed up the numerical computing in python browsing
+Pandas which is an extremely popular python library for data exploration and manipulation.
+
+
+
+
+
+
 
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen should be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
