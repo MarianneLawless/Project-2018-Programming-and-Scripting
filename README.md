@@ -1,5 +1,7 @@
 **Project-2018-Programming-and-Scripting**
 ==========================================
+# The programming Language used to assist in writing code for this project
+Anaconda download is a great way to install Python and all of the common Python libraries on your computer. I recommend installing version 3.6, 64-bit. https://www.python.org/
 
 ## The following project concerns the well-known Fisher’s Iris data set
 ### Project Overview
@@ -19,7 +21,6 @@ to assist with these calculations.
 
 ## Iris data set
 
-Anaconda download is a great way to install Python and all of the common Python libraries on your computer. I recommend installing version 3.6, 64-bit. https://www.python.org/
 
 
 
@@ -27,3 +28,5 @@ In 1936 Edgar Anderson collected, 50 samples of three different types of iris, o
 
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen should be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
+(/images/Ronald Fisher image.jpg)
+Format: ![Alt Text](url)
