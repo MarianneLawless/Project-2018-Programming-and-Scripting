@@ -29,3 +29,5 @@ In 1936 Edgar Anderson collected, 50 samples of three different types of iris, o
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen should be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
 (https://![alt text](github.com/MarianneLawless/Project-2018-Programming-and-Scripting/RonaldFisherimage.jpg)
+
+http://www.swlearning.com/quant/kohler/stat/biographical_sketches/Fisher_3.jpeg
