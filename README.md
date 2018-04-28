@@ -31,3 +31,4 @@ The following Python script that reads the Iris data set in and prints the four 
 (https://![alt text](github.com/MarianneLawless/Project-2018-Programming-and-Scripting/RonaldFisherimage.jpg)
 
 http://www.swlearning.com/quant/kohler/stat/biographical_sketches/Fisher_3.jpeg
+<img src="https://image.ibb.co/g96qDc/gmitlogo.jpg" alt="gmitlogo" border="0" width=450 align="center">
