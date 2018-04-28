@@ -68,13 +68,32 @@ Each row is known as an observation, some equivalent terms are sample, examples,
 Each column is known as a feature, some equivalent terms are predictor, attribute, independent variable, input, regressor and covariate. The iris data set has four features. 
 
 
+# 1 Before starting the project some programs, files and libraries were downloaded and installe
+    Python version 3.6 downloaded via Anaconda3
+    Visual Studio Code version 1.21.1 downloaded and set up with Github
+    Iris dataset downloaded from UCI website 
+    Libraries imported: csv, pandas, numpy, matplotlib    
+    
+When a Library is imported, it means that the library will be loaded into the memory and then it can be use used. To import a library the following code should be run:
+import csv
+import pandas as pd
+import numpy as np
+
+# 2 
 
 
 
 
 
 
-The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen should be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
+
+
+
+
+
+
+
+The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen shouuld be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
 
 
