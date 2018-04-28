@@ -1,7 +1,35 @@
 **Project-2018-Programming-and-Scripting**
 ==========================================
+<img src="https://image.ibb.co/g96qDc/gmitlogo.jpg" alt="gmitlogo" border="0" width=450 align="center">
 # The programming Language used to assist in writing code for this project
 Anaconda download is a great way to install Python and all of the common Python libraries on your computer. I recommend installing version 3.6, 64-bit. https://www.python.org/
+
+Before starting the project some programs, files and libraries were downloaded and installed:
+<ol>
+ <li>Python version 3.6 downloaded via Anaconda3</li>
+ <li>Visual Studio Code version 1.21.1 downloaded and set up with Github</li> 
+ <li>Iris dataset downloaded from UCI website or it can be done from other ways, such as via sklearn </li>
+ <li>Libraries imported: csv, pandas, numpy, matplotlib,seaborn and sklearn </li>
+ </ol>
+ 
+  When a library is imported, it means that the library will be loaded into the memory and then it can be use used. To import a library the following code should be run:
+ 
+ ``` python
+ import csv
+ import pandas as pd
+ import numpy as np
+ import seaborn as sns
+ import scipy
+ import sklearn
+  
+Some information about some of the libraries imported[1]: <br>
+_Pandas_ - for data-frame management package that allows for some useful function on the dataset.<br>
+_Numpy_ - package useful for lineal algebra.<br>
+_Matplotlib_ - good package to contruct visualizations.<br>
+_Seaborn_ - it is based on matplotlib that provides a high-level interface for drawing attractive statistical graphics.<br>
+_Scipy_ - a collection of numerical algorithms including statistics.<br>
+_Sklearn_ - package important to do machine learning in python.<br>
+ 
 
 ## The following project concerns the well-known Fisher’s Iris data set
 ### Project Overview
@@ -31,4 +59,18 @@ The following Python script that reads the Iris data set in and prints the four 
 (https://![alt text](github.com/MarianneLawless/Project-2018-Programming-and-Scripting/RonaldFisherimage.jpg)
 
 http://www.swlearning.com/quant/kohler/stat/biographical_sketches/Fisher_3.jpeg
-<img src="https://image.ibb.co/g96qDc/gmitlogo.jpg" alt="gmitlogo" border="0" width=450 align="center">
+
+<p align="center"><img src="https://image.ibb.co/cbYW47/anderson_edgar_pdf.png" width=222px><img src="https://image.ibb.co/jUYu4x/R_A_Fischer.jpg" width=250px></p><br>
+<p align="center">Edgar Anderson and Ronald Fisher</p>
+
+
+<p align="center"><img src="https://image.ibb.co/b2wYZH/iris_machinelearning.png" alt="iris_machinelearning" border="0" width=500px></p><br>
+<p align="center">Three iris species/classes. From: https://goo.gl/RSwtrk</p>
+
+ <p align="center"><img src="https://image.ibb.co/gbSzP7/irisdataset.png" align="center" width=600px></p><br>
+<p align="center"> Iris attributes. From: https://rpubs.com/wjholst/322258</p>
+  
+ <p align="center"><img src="https://image.ibb.co/kTbs2H/2018_04_11_13_05_03_sq_Es_Wbo_png_451_592.png"></p><br>
+ <p align="center">Iris Dataset characteristics. From: http://scikit-learn.org/stable/datasets/index.html#datasets</p>
+
+
