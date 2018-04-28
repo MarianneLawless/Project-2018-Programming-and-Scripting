@@ -41,6 +41,8 @@ Iris versicolor, Iris virginica
 
 <img src="https://image.ibb.co/gbSzP7/irisdataset.png" align="center" width=600px>
 
+<img src="https://image.ibb.co/b2wYZH/iris_machinelearning.png" alt="iris_machinelearning" border="0" width=500px>
+
 In 1936 using this data collected, Ronal Fisher wrote a paper on the linear discriminant analysis, which could be accurately distinguish the three types from one another using only the sepal and petal measurements.
 
 In other words, Fisher coined this as a supervised learning problem, in which we are attempting to predict the species of a particular iris using the available data collected.
@@ -91,7 +93,7 @@ The following Python script that reads the Iris data set in and prints the four 
 
 
 
-<img src="https://image.ibb.co/b2wYZH/iris_machinelearning.png" alt="iris_machinelearning" border="0" width=500px></p><br>
+
 
 
 
