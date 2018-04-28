@@ -39,6 +39,8 @@ In 1936 Edgar Anderson collected, 50 samples of three different types of iris, o
 The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
 Iris versicolor, Iris virginica
 
+<img src="https://image.ibb.co/gbSzP7/irisdataset.png" align="center" width=600px>
+
 In 1936 using this data collected, Ronal Fisher wrote a paper on the linear discriminant analysis, which could be accurately distinguish the three types from one another using only the sepal and petal measurements.
 
 In other words, Fisher coined this as a supervised learning problem, in which we are attempting to predict the species of a particular iris using the available data collected.
@@ -85,14 +87,14 @@ Pandas which is an extremely popular python library for data exploration and man
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen should be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
 
-<img src="https://image.ibb.co/cbYW47/anderson_edgar_pdf.png" width=222px><img src="https://image.ibb.co/jUYu4x/R_A_Fischer.jpg" width=250px
+<img src="https://image.ibb.co/cbYW47/anderson_edgar_pdf.png" width=222px><img src="https://image.ibb.co/jUYu4x/R_A_Fischer.jpg" width=250px>
 
 
 
 <img src="https://image.ibb.co/b2wYZH/iris_machinelearning.png" alt="iris_machinelearning" border="0" width=500px></p><br>
 
 
-<img src="https://image.ibb.co/gbSzP7/irisdataset.png" align="center" width=600px>
+
 
   
 
