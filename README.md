@@ -68,7 +68,7 @@ Each row is known as an observation, some equivalent terms are sample, examples,
 Each column is known as a feature, some equivalent terms are predictor, attribute, independent variable, input, regressor and covariate. The iris data set has four features. 
 
 
-# 1 Before starting the project some programs, files and libraries were downloaded and installe
+# 1 Before starting the project some programs, files and libraries were downloaded and installed
     Python version 3.6 downloaded via Anaconda3
     Visual Studio Code version 1.21.1 downloaded and set up with Github
     Iris dataset downloaded from UCI website 
@@ -78,6 +78,23 @@ When a Library is imported, it means that the library will be loaded into the me
 import csv
 import pandas as pd
 import numpy as np
+
+# Before commencing with my project , I did a quick test run to ensure I had the required libraries needed to assist me with my project.
+I ran this in Visual Studio Code 
+import sys
+print("Pyhton: {}".format(sys.version))
+import numpy
+print("numpy: {}" .format(numpy.version))
+import matplotlib
+print("matplotlib {}".format(matplotlib))
+import pandas
+print("pandas {}".format(pandas))
+
+PS C:\Users\Marianne\Desktop\Project-2018-Programming-and-Scripting> python vsclibaries.py
+Pyhton: 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)]
+numpy: <module 'numpy.version' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\numpy\\version.py'>
+matplotlib <module 'matplotlib' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\matplotlib\\__init__.py'>
+
 
 # 2 
 
