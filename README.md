@@ -301,6 +301,7 @@ This is relatively a very small data set with 150 samples. Since the dataframe h
 
 Now going into the mathematics of the dataset, let us find out the standard deviation, mean, minimum value and the four quartile percentile of the data.
 #### iris_data.describe()
+
 ![describet.jpg](describe.jpg)
 
 ### Analysing the data visually
@@ -309,10 +310,12 @@ Let us look at the box plot of the dataset, which shows us the visual representa
 #### import seaborn as sns
 #### sns.boxplot(dat = iris_data,width=0.5,fliersize=5)
 ####  sns.set(rc={'figure.figsize':(2,5)})
+
  ![snsplot.jpg](snsplot.jpg)
  
 To understand how each feature accounts for classification of the data, we can build a scatter plot which shows us the correlation with respect to other features. This method helps just to figure out the important features which account the most for the classification in our model. 
-[scatter-plot.jpg](scatter-plot.jpg)
+
+![scatter-plot.jpg](scatter-plot.jpg)
 
 ### Applying the algorithm
 ### 1. Dividing the data for training and testing
@@ -342,6 +345,8 @@ Using some of the commonly used algorithms, we will be training our model to che
 
 #### Randomforest is one of the highly accurate nonlinear algorithm, which works on the principle of Decision Tree Classification. Let us see how accurate it is:
 
+![rf.jpg](rf.jpg)
+
 #### Logistic regression works on two schemes, first, if it is a binary classification problem, it works as one vs the rest, and if it is a multi class classification problem it works as one vs many. 
 
 ![logistic-regression.jpg](logistic-regression.jpg)
@@ -349,6 +354,7 @@ Using some of the commonly used algorithms, we will be training our model to che
 ### 3. Choose a model and Tune the parameters
 
 ### From the above models, we saw that randomforest gives us the best accuracy of 97.59%. Let us tune the parameter to get a 100% accuracy. Let us set the number of trees to be 1,000 to check if our model is performing well.
+
 ![forest.jpg](forest.jpg)
 
 ### Conclusion
