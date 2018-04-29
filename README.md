@@ -92,19 +92,19 @@ import numpy as np
 
 ### Before commencing with my project , I did a quick test run to ensure I had the required libraries needed to assist me with my project.
 I ran this in Visual Studio Code 
-import sys
-print("Pyhton: {}".format(sys.version))
-import numpy
-print("numpy: {}" .format(numpy.version))
-import matplotlib
-print("matplotlib {}".format(matplotlib))
-import pandas
-print("pandas {}".format(pandas))
+* import sys
+* print("Pyhton: {}".format(sys.version))
+* import numpy
+* print("numpy: {}" .format(numpy.version))
+* import matplotlib
+* print("matplotlib {}".format(matplotlib))
+* import pandas
+* print("pandas {}".format(pandas))
 
-PS C:\Users\Marianne\Desktop\Project-2018-Programming-and-Scripting> python vsclibaries.py
-Pyhton: 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)]
-numpy: <module 'numpy.version' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\numpy\\version.py'
-matplotlib <module 'matplotlib' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\matplotlib\\__init__.py'>
+#### *PS C:\Users\Marianne\Desktop\Project-2018-Programming-and-Scripting> python vsclibaries.py
+#### Pyhton: 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)]
+#### numpy: <module 'numpy.version' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\numpy\\version.py'
+#### matplotlib <module 'matplotlib' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\matplotlib\\__init__.py'>
 
 ### Iris dataset downloaded from https://archive.ics.uci.edu/ml/datasets/iris
 
