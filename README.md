@@ -123,55 +123,67 @@ data[0] # Access the first line of data file#
 (data[:,3]) # Access the fouth column of the data file ..Petal width
 
 
-numpy.mean(data[:,0]) # Average / Mean of Sepal Lenght
-5.8433333333333337
+numpy.mean(data[:,0]) 
+Average / Mean of Sepal Lenght
+5.8433
 
 numpy.mean(data[:,1])
-3.0540000000000003 # Average / Mean of Sepal Width
+3.0540000000000003 
+Average / Mean of Sepal Width
 
 numpy.mean(data[:,2])
-3.7586666666666662 # Average / Mean of Petal Lenght
+3.756
+Average / Mean of Petal Lenght
 
-numpy.mean(data[:,3]) # Average / Mean of Petal Width 
-1.1986666666666668
+numpy.mean(data[:,3]) 
+Average / Mean of Petal Width 
+1.1986
 
-numpy.max (data[:,0]) # Maximum lenght of the Sepal Lenght
-7.9000000000000004
+numpy.max (data[:,0]) 
+Maximum lenght of the Sepal Lenght
+7.90
 
-numpy.max (data[:,1]) # Maximum Lenght of the Sepal Width
+numpy.max (data[:,1]) 
+Maximum Lenght of the Sepal Width
 4.4000000000000004
 
 numpy.max (data[:,2])
-6.9000000000000004 # Maximum Lenght of the Petal Lenght
+6.90 
+Maximum Lenght of the Petal Lenght
 
-numpy.max (data[:,3]) # Maximum Lenght of the Petal Width
-2.5 
+numpy.max (data[:,3]) 
+Maximum Lenght of the Petal Width
+2.50 
 
 numpy.min (data[:,0])
-4.2999999999999998 # Mininmum Lenght Sepal Lenght
+4.29
+Mininmum Lenght Sepal Lenght
 
-numpy.min (data[:,1]) # Minimum Lenght Sepal Width
+numpy.min (data[:,1]) 
+Minimum Lenght Sepal Width
 2.0
 
-numpy.min (data[:,2]) # Minimum Lenght Petal Lenght
+numpy.min (data[:,2]) 
+Minimum Lenght Petal Lenght
 1.0
 
-numpy.min (data[:,3]) # Minimum Lenght Petal Width
-0.10000000000000001
+numpy.min (data[:,3]) 
+Minimum Lenght Petal Width
+0.10
 
 
-# 2 
+### 2 
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen shouuld be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
 
-with open("data/iris.csv") as f: #Open the file and automatically close 
-  for line in f: #loops through each line in the file, and prints the lines in the following format
-    print('{:4} {:4} {:4} {:4}'.format(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3]))
+* with open("data/iris.csv") as f: #Open the file and automatically close 
+ *  for line in f: #loops through each line in the file, and prints the lines in the following format
+  * print('{:4} {:4} {:4} {:4}'.format(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3]))
     
-# 3 Plotting using Histograms
+### 3 Plotting using Histograms
 Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.
 Matplotlib tries to make easy things easy and hard things possible. You can generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc., with just a few lines of code
 For simple plotting the pyplot module provides a MATLAB-like interface, particularly when combined with IPython. For the power user, you have full control of line styles, font properties, axes properties, etc, via an object oriented interface or via a set of functions familiar to MATLAB users.
-# This is a single csvfile representing the Sepal Lenght of the Iris data set
+#### This is a single csvfile representing the Sepal Lenght of the Iris data set
 
 import numpy
 mydata = numpy.genfromtxt("data/SL.csv" ,delimiter=",")
@@ -186,60 +198,59 @@ sum = numpy.sum(mydata)
 
 ![Sepal](Sepal.jpg)
 
-
-# This is a single csvfile representing the Sepal Width of the Iris data set
+### This is a single csvfile representing the Sepal Width of the Iris data set
 
 import numpy as numpy
 mydata = numpy.genfromtxt("data/SW.csv" ,delimiter=",")
 
 mean = numpy.mean(mydata)
-# 3.05
+3.05
 min =  numpy.min(mydata)
-# 2
+2
 max = numpy.max(mydata)
-# 4.4
+4.4
 sum = numpy.sum(mydata)
-# 454.7
+454.7
 ![SW](SW.jpg)
 
-# Marianne Lawless
-# Project Iris Data Set
-# This is a single csvfile representing the Petal Lenght of the Iris data set
+
+### This is a single csvfile representing the Petal Lenght of the Iris data set
 
 import numpy
 mydata = numpy.genfromtxt("data/PL.csv" ,delimiter=",")
 
 mean = numpy.mean(mydata)
-# 5.8
+5.8
 
 max = numpy.max(mydata)
-# 7.9
+7.9
 
 min = numpy.min(mydata)
-# 4.30
+4.30
 
 sum = numpy.sum(mydata)
-# 870.29
+870.29
 
 ![PL](PL.jpg)
 
 
-# This is a single csvfile representing the Petal Width of the Iris data set
+### This is a single csvfile representing the Petal Width of the Iris data set
 
 import numpy
 mydata = numpy.genfromtxt("data/PW.csv" ,delimiter=",")
 
 mean = numpy.mean(mydata)
-# 1.2
+1.2
 
 max = numpy.max(mydata)
-# 2.5
+2.5
 
 min = numpy.min(mydata)
-# .01
+.01
 
 sum = numpy.sum(mydata)
-# 177.5
+177.5
+
 ![PW](PW.jpg)
 
 On further research mainly from https://analyticsindiamag.com/start-building-first-machine-learning-project-famous-dataset/
@@ -346,15 +357,8 @@ In ML, there is no specific model or an algorithm which can give 100% result to 
 
 
 
- 
-
-
-
- 
-
-
-
-### List of references
+ ### List of references
+#### https://analyticsindiamag.com/start-building-first-machine-learning-project-famous-dataset/
 #### https://www.python.org/
 #### https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
 #### https://en.wikipedia.org/wiki/Iris_flower_data_set
