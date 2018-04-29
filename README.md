@@ -8,10 +8,9 @@ Anaconda download is a great way to install Python and all of the common Python 
 ### Project Overview
 
 The following project concerns the well-known Fisher's Iris data set. The project entails the researching of the data set, and then writing documnentation and code in the Python programmining language based on that research
-I have broken down this project into several smaller tasks that are easier to solve, and plugged these together after they have been completed.
-i have done this by using the following guidelines:
+I have broken down this project into several smaller tasks that are easier to solve, and plugged these together after they have been completed.I have done this by using the following guidelines:
 
-* Research background information about the data setand write a summary about it.
+* Research background information about the data set and write a summary about it.
 * Keep a list of references that I am using in completing this project.
 * I have downloaded the data set and written some Python code to investigate it.
 * I have also written code that I hace been using throughout this module and tested it on the Iris data set
@@ -49,7 +48,7 @@ Iris versicolor, Iris virginica
 
 <img src="https://image.ibb.co/b2wYZH/iris_machinelearning.png" alt="iris_machinelearning" border="0" width=500px>
 
-In 1936 using this data collected, Ronald Fisher wrote a paper on the linear discriminant analysis, which could be accurately distinguish the three types from one another using only the sepal and petal measurements.
+In 1936 using this data collected, Ronald Fisher wrote a paper on the linear discriminant analysis, which could  accurately distinguish the three types from one another using only the sepal and petal measurements.
 
 ##  Ronald Fisher
 <img src="https://image.ibb.co/jUYu4x/R_A_Fischer.jpg" width=250px align=center>
@@ -68,8 +67,7 @@ Each row is known as an observation, some equivalent terms are sample, examples,
 Each column is known as a feature, some equivalent terms are predictor, attribute, independent variable, input, regressor and covariate. The iris data set has four features. 
 
 
-### 1
-### Before starting the project some programs, files and libraries were downloaded and installed
+### 1. Before starting the project some programs, files and libraries were downloaded and installed
     Python version 3.6 downloaded via Anaconda3
     Visual Studio Code version 1.21.1 downloaded and set up with Github
     Iris dataset downloaded from UCI website 
@@ -98,6 +96,7 @@ matplotlib <module 'matplotlib' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-
 
 ### Iris dataset downloaded from https://archive.ics.uci.edu/ml/datasets/iris
 
+### Below are my findings whilst using numpy
 ### import numpy # Read data file into array 
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 
@@ -156,29 +155,26 @@ with open("data/iris.csv") as f: #Open the file and automatically close
   for line in f: #loops through each line in the file, and prints the lines in the following format
     print('{:4} {:4} {:4} {:4}'.format(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3]))
     
-
-![Plotiris](Plotiris.png)
-
 # 3 Plotting using Histograms
-# Marianne Lawless
-# Project Iris Data Set
+Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shells, the Jupyter notebook, web application servers, and four graphical user interface toolkits.
+Matplotlib tries to make easy things easy and hard things possible. You can generate plots, histograms, power spectra, bar charts, errorcharts, scatterplots, etc., with just a few lines of code
+For simple plotting the pyplot module provides a MATLAB-like interface, particularly when combined with IPython. For the power user, you have full control of line styles, font properties, axes properties, etc, via an object oriented interface or via a set of functions familiar to MATLAB users.
 # This is a single csvfile representing the Sepal Lenght of the Iris data set
 
 import numpy
 mydata = numpy.genfromtxt("data/SL.csv" ,delimiter=",")
 mean = numpy.mean(mydata)
-# 5.8 
+5.8 
 max = numpy.max(mydata)
-# 7.9
+7.9
 min = numpy.min(mydata)
-# 4.30
+4.30
 sum = numpy.sum(mydata)
-# 870.299
+870.299
 
 ![Sepal](Sepal.jpg)
 
-# Marianne Lawless
-# Project Iris Data Set
+
 # This is a single csvfile representing the Sepal Width of the Iris data set
 
 import numpy as numpy
@@ -215,8 +211,7 @@ sum = numpy.sum(mydata)
 
 ![PL](PL.jpg)
 
-# Marianne Lawless
-# Project Iris Data Set
+
 # This is a single csvfile representing the Petal Width of the Iris data set
 
 import numpy
@@ -234,6 +229,35 @@ min = numpy.min(mydata)
 sum = numpy.sum(mydata)
 # 177.5
 ![PW](PW.jpg)
+
+List of references
+https://www.python.org/
+https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
+https://en.wikipedia.org/wiki/Iris_flower_data_set
+http://archive.ics.uci.edu/ml/index.php
+http://cs231n.github.io/python-numpy-tutorial/
+http://cs231n.github.io/python-numpy-tutorial/
+https://pythontips.com/2013/07/30/20-python-libraries-you-
+
+[1] https://www.anaconda.com/
+[2] https://code.visualstudio.com/
+[3] https://www.python.org/
+[4] https://github.com/
+[5] https://en.wikipedia.org/wiki/GitHub
+[6] https://en.wikipedia.org/wiki/Iris_flower_data_set
+[7] https://stackoverflow.com/questions/36967126/why-do-i-get-good-accuracy-with-iris-dataset-with-a-single-hidden-node
+[8] https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+[9] https://en.wikipedia.org/wiki/Box_plot
+
+[11] https://pythonspot.com/matplotlib-pie-chart/
+[12] http://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/
+[13] https://stackoverflow.com/questions/1985856/how-to-make-a-3d-scatter-plot-in-python
+[14] Image on cover page: https://xantheunwinart.deviantart.com/art/iris-flower-289614269
+[15] https://rpubs.com/rpadebet/269829
+[16] https://gist.github.com
+[17][20] http://www.learn4master.com/algorithms/visualize-iris-dataset-using-python
+
+
 
 
 
