@@ -41,6 +41,12 @@ In 1936 Edgar Anderson collected, 50 samples of three different types of iris, o
 
 <img src="https://image.ibb.co/cbYW47/anderson_edgar_pdf.png" width=222px align=center>
 
+* Edgar Shannon Anderson (November 9, 1897 – June 18, 1969) was an American botanist. His 1949 book Introgressive Hybridization was an original and important contribution to botanical genetics.
+
+* Anderson was born in Forestville, New York. When he was three, his family moved to East Lansing, Michigan where his father had accepted a position to teach dairy husbandry. In 1914 Anderson entered Michigan State College to study botany and horticulture. After completing his degree he joined the Naval Reserve and in 1919 he accepted a graduate position at the Bussey Institution of Harvard University. His studies were supervised by geneticist Edward Murray East and Anderson worked on the genetics of self-incompatibility in Nicotiana. He was awarded a master's degree in 1920 and a DSc in agricultural genetics in 1922.
+
+* He accepted a position as a geneticist at the Missouri Botanical Garden and was appointed assistant professor of botany at Washington University in St. Louis. His research was focused on developing techniques to quantify geographic variation in Iris versicolor. In 1929 he received a fellowship to undertake studies at the John Innes Horticultural Institute in Britain, where he worked with cytogeneticist C. D. Darlington, statistician R. A. Fisher, and geneticist J. B. S. Haldane. Anderson's data set on three related species of irises was used by Fisher as an example with which to demonstrate statistical methods of classification and has subsequently become very well known in the machine learning community, though often described as Fisher's iris data.
+
 The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
 Iris versicolor, Iris virginica
 
@@ -52,6 +58,12 @@ In 1936 using this data collected, Ronald Fisher wrote a paper on the linear dis
 
 ##  Ronald Fisher
 <img src="https://image.ibb.co/jUYu4x/R_A_Fischer.jpg" width=250px align=center>
+
+* Sir Ronald Aylmer Fisher FRS[2] (17 February 1890 – 29 July 1962), who published as R. A. Fisher, was a British statistician and geneticist. For his work in statistics, he has been described as "a genius who almost single-handedly created the foundations for modern statistical science"[3] and "the single most important figure in 20th century statistics".[4] In genetics, his work used mathematics to combine Mendelian genetics and natural selection; this contributed to the revival of Darwinism in the early 20th century revision of the theory of evolution known as the modern synthesis. Fisher also did experimental agricultural research, which has saved millions from starvation.[5]
+
+* From 1919 onward, he worked at the Rothamsted Experimental Station for 14 years;[6] there, he analysed its immense data from crop experiments since the 1840s, and developed the analysis of variance (ANOVA). He established his reputation there in the following years as a biostatistician. He is known as one of the three principal founders of population genetics. He outlined Fisher's principle, the Fisherian runaway and sexy son hypothesis theories of sexual selection. His contributions to statistics include the maximum likelihood, fiducial inference, the derivation of various sampling distributions, founding principles of the design of experiments, and much more.
+
+* Fisher held strong views on race. Throughout his life, he was a prominent supporter of eugenics, an interest which led to his work on statistics and genetics.[7] Notably, he was a dissenting voice in UNESCO's statement The Race Question, insisting on racial differences.[8]
 
 In other words, Fisher coined this as a supervised learning problem, in which we are attempting to predict the species of a particular iris using the available data collected.
 
@@ -343,7 +355,7 @@ In ML, there is no specific model or an algorithm which can give 100% result to 
 
 
 ### List of references
-####https://www.python.org/
+#### https://www.python.org/
 #### https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
 #### https://en.wikipedia.org/wiki/Iris_flower_data_set
 #### http://archive.ics.uci.edu/ml/index.php
@@ -360,7 +372,7 @@ In ML, there is no specific model or an algorithm which can give 100% result to 
 #### https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 #### https://en.wikipedia.org/wiki/Box_plot
 #### https://pythonspot.com/matplotlib-pie-chart/
-####http://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/
+#### http://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/
 #### https://stackoverflow.com/questions/1985856/how-to-make-a-3d-scatter-plot-in-pytho
 #### https://rpubs.com/rpadebet/26982
 #### https://gist.github.com
