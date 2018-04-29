@@ -185,31 +185,30 @@ Matplotlib tries to make easy things easy and hard things possible. You can gene
 For simple plotting the pyplot module provides a MATLAB-like interface, particularly when combined with IPython. For the power user, you have full control of line styles, font properties, axes properties, etc, via an object oriented interface or via a set of functions familiar to MATLAB users.
 #### This is a single csvfile representing the Sepal Lenght of the Iris data set
 
-import numpy
-mydata = numpy.genfromtxt("data/SL.csv" ,delimiter=",")
+* import numpy
+* mydata = numpy.genfromtxt("data/SL.csv" ,delimiter=",")
 mean = numpy.mean(mydata)
 5.8 
-max = numpy.max(mydata)
+* max = numpy.max(mydata)
 7.9
-min = numpy.min(mydata)
+* min = numpy.min(mydata)
 4.30
-sum = numpy.sum(mydata)
+* sum = numpy.sum(mydata)
 870.299
 
 ![Sepal](Sepal.jpg)
 
 ### This is a single csvfile representing the Sepal Width of the Iris data set
 
-import numpy as numpy
-mydata = numpy.genfromtxt("data/SW.csv" ,delimiter=",")
-
+* import numpy as numpy
+* mydata = numpy.genfromtxt("data/SW.csv" ,delimiter=",")
 mean = numpy.mean(mydata)
 3.05
-min =  numpy.min(mydata)
+* min =  numpy.min(mydata)
 2
-max = numpy.max(mydata)
+* max = numpy.max(mydata)
 4.4
-sum = numpy.sum(mydata)
+* sum = numpy.sum(mydata)
 454.7
 ![SW](SW.jpg)
 
@@ -265,6 +264,7 @@ Following are the steps involved in creating a well-defined ML project:
 * Apply the algorithms
 * Reduce the errors
 * Predict the result
+
 To understand various machine learning algorithms let us use the Iris data set, one of the most famous datasets available. 
 This data set consists of the physical parameters of three species of flower — Versicolor, Setosa and Virginica. The numeric parameters which the dataset contains are Sepal width, Sepal length, Petal width and Petal length. In this data we will be predicting the classes of the flowers based on these parameters.The data consists of continuous numeric values which describe the dimensions of the respective features. We will be training the model based on these features.
 
