@@ -230,6 +230,99 @@ sum = numpy.sum(mydata)
 # 177.5
 ![PW](PW.jpg)
 
+On further research mainly from https://analyticsindiamag.com/start-building-first-machine-learning-project-famous-dataset/
+and also from a selecd few of the references, I ivestigated further
+
+### Start Building Your First Machine Learning Project With The Iris Dataset
+Every machine learning project begins by understanding what the data and drawing the objectives. While applying machine learning algorithms to your data set, you are understanding, building and analyzing the data as to get the end result.
+
+Following are the steps involved in creating a well-defined ML project:
+* Understand and define the problem
+* Analyse and prepare the data
+* Apply the algorithms
+* Reduce the errors
+* Predict the result
+To understand various machine learning algorithms let us use the Iris data set, one of the most famous datasets available. 
+This data set consists of the physical parameters of three species of flower — Versicolor, Setosa and Virginica. The numeric parameters which the dataset contains are Sepal width, Sepal length, Petal width and Petal length. In this data we will be predicting the classes of the flowers based on these parameters.The data consists of continuous numeric values which describe the dimensions of the respective features. We will be training the model based on these features.
+
+Let us dive into building of our ML project. We will be using Python to understand and train our model. Numpy, Pandas and SciKit Learn are some of the inbuilt libraries in Python.
+* import numpy as np
+* import pandas as pd
+* import matlotlib.pyplot as plt
+* import matplotlib.pyplot as pl
+* from sklearn.svm import SVC
+* from sklearn.neighbors import KNeighborsClassifier
+* from sklearn.esemble import RandomForestClassifier
+* from sklearn.linear_model import LogisticRegression
+* from sklearn.metrics import accuracy_score
+
+Iris dataset is already available in SciKit Learn library and we can directly import it with the following code: 
+* from sklearn import datasets
+* iris = datasets.load_iris()
+
+The parameters of the iris flowers can be expressed in the form of a dataframe shown in the image below, and the column ‘class’ tells us which category it belongs to
+iris = datasets.load_iris()
+iris_data= iris.data
+iris_data = pd.DataFrame(iris_data, columns= iris.feature_names)
+iris_data.head()
+
+ sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
+0                5.1               3.5                1.4               0.2
+1                4.9               3.0                1.4               0.2
+2                4.7               3.2                1.3               0.2
+3                4.6               3.1                1.5               0.2
+4                5.0               3.6                1.4               0.2
+
+As mentioned above, there are three types of flowers in our dataset. Let us look at the target names of each of the flower.
+ iris.target_names
+ array(['setosa', 'versicolor', 'virginica'],
+      dtype='<U10')
+      
+ ### Understanding the data
+This is relatively a very small data set with 150 samples. Since the dataframe has four features (Sepal length, sepal width, petal length and petal width) with 150 samples belonging to either of the three target classes, our matrix will be: 
+print (iris_data.shape)
+(150, 4)
+
+Now going into the mathematics of the dataset, let us find out the standard deviation, mean, minimum value and the four quartile percentile of the data.
+iris_data.describe()
+Out[25]:
+       sepal length (cm)  sepal width (cm)  petal length (cm)  
+count         150.000000        150.000000         150.000000
+mean            5.843333          3.054000           3.758667
+std             0.828066          0.433594           1.764420
+min             4.300000          2.000000           1.000000
+25%             5.100000          2.800000           1.600000
+50%             5.800000          3.000000           4.350000
+75%             6.400000          3.300000           5.100000
+max             7.900000          4.400000           6.900000
+
+       petal width (cm)
+count        150.000000
+mean           1.198667
+std            0.763161
+min            0.100000
+25%            0.300000
+50%            1.300000
+75%            1.800000
+max            2.500000
+
+### Analysing the data visually
+I have earlier used Histograms to analyse the data set
+Let us look at the box plot of the dataset, which shows us the visual representation of how our data is scattered over the the plane. Box plot is a percentile-based graph, which divides the data into four quartiles of 25% each. This method is used in statistical analysis to understand various measures such as mean, median and deviation. 
+
+In [26]: import seaborn as sns
+sns.boxplot(dat = iris_data,width=0.5,fliersize=5)
+ sns.set(rc={'figure.figsize':(2,5)})
+ ![Sns-plot.png](Sns-plot.png)
+ 
+
+
+
+ 
+ 
+
+
+
 List of references
 https://www.python.org/
 https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
