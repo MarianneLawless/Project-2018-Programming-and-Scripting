@@ -265,90 +265,106 @@ iris = datasets.load_iris()
 iris_data= iris.data
 iris_data = pd.DataFrame(iris_data, columns= iris.feature_names)
 iris_data.head()
-
- sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
-0                5.1               3.5                1.4               0.2
-1                4.9               3.0                1.4               0.2
-2                4.7               3.2                1.3               0.2
-3                4.6               3.1                1.5               0.2
-4                5.0               3.6                1.4               0.2
+ 
 
 As mentioned above, there are three types of flowers in our dataset. Let us look at the target names of each of the flower.
  iris.target_names
- array(['setosa', 'versicolor', 'virginica'],
-      dtype='<U10')
+![target-jpg](target.jpg)
       
- ### Understanding the data
+### Understanding the data
 This is relatively a very small data set with 150 samples. Since the dataframe has four features (Sepal length, sepal width, petal length and petal width) with 150 samples belonging to either of the three target classes, our matrix will be: 
-print (iris_data.shape)
-(150, 4)
+##### print (iris_data.shape)
+#### (150, 4)
 
 Now going into the mathematics of the dataset, let us find out the standard deviation, mean, minimum value and the four quartile percentile of the data.
-iris_data.describe()
-Out[25]:
-       sepal length (cm)  sepal width (cm)  petal length (cm)  
-count         150.000000        150.000000         150.000000
-mean            5.843333          3.054000           3.758667
-std             0.828066          0.433594           1.764420
-min             4.300000          2.000000           1.000000
-25%             5.100000          2.800000           1.600000
-50%             5.800000          3.000000           4.350000
-75%             6.400000          3.300000           5.100000
-max             7.900000          4.400000           6.900000
-
-       petal width (cm)
-count        150.000000
-mean           1.198667
-std            0.763161
-min            0.100000
-25%            0.300000
-50%            1.300000
-75%            1.800000
-max            2.500000
+#### iris_data.describe()
+![describet.jpg](describe.jpg)
 
 ### Analysing the data visually
 I have earlier used Histograms to analyse the data set
-Let us look at the box plot of the dataset, which shows us the visual representation of how our data is scattered over the the plane. Box plot is a percentile-based graph, which divides the data into four quartiles of 25% each. This method is used in statistical analysis to understand various measures such as mean, median and deviation. 
-
-In [26]: import seaborn as sns
-sns.boxplot(dat = iris_data,width=0.5,fliersize=5)
- sns.set(rc={'figure.figsize':(2,5)})
+Let us look at the box plot of the dataset, which shows us the visual representation of how our data is scattered over the the plane. Box plot is a percentile-based graph, which divides the data into four quartiles of 25% each. This method is used in statistical analysis to understand various measures such as mean, median and deviation.
+#### import seaborn as sns
+#### sns.boxplot(dat = iris_data,width=0.5,fliersize=5)
+####  sns.set(rc={'figure.figsize':(2,5)})
  ![snsplot.jpg](snsplot.jpg)
  
+To understand how each feature accounts for classification of the data, we can build a scatter plot which shows us the correlation with respect to other features. This method helps just to figure out the important features which account the most for the classification in our model. 
+[scatter-plot.jpg](scatter-plot.jpg)
+
+### Applying the algorithm
+### 1. Dividing the data for training and testing
+
+Once we have understood what the dataset is about, we can start training a model based on the algorithms. Here, we will be implementing some of the commonly used algorithms in machine learning. Let us start by training our model with some of the samples. We will be using an inbuilt library called ‘train_test_split’ which divides our data set into a ratio of 70:30. It can be done by the following code: 
+
+![train.jpg](train.jpg)
+
+### 2. Training the model
+
+Using some of the commonly used algorithms, we will be training our model to check how accurate every algorithm is. We will be implementing these algorithms to compare:
+
+* K – Nearest Neighbour (KNN)
+* Support Vector Machine (SVM)
+* Randomforest
+* Logistic Regression
+
+#### Let us start building our model and predicting accuracy of every algorithm used. We can also check which gives the best result.
+
+##### We can start with the first algorithm KNN with number of neighbours, 5. We can build our model like below:
+
+![knn.jpg](knn.jpg)
+
+#### Next, the Support Vector Machine model works on the principle of Radial Basis function with default parameters. We will be using the RBF kernel to check the accuracy. 
+
+![svm.jpg](svm.jpg)
+
+#### Randomforest is one of the highly accurate nonlinear algorithm, which works on the principle of Decision Tree Classification. Let us see how accurate it is:
+
+#### Logistic regression works on two schemes, first, if it is a binary classification problem, it works as one vs the rest, and if it is a multi class classification problem it works as one vs many. 
+
+![logistic-regression.jpg](logistic-regression.jpg)
+
+### 3. Choose a model and Tune the parameters
+
+### From the above models, we saw that randomforest gives us the best accuracy of 97.59%. Let us tune the parameter to get a 100% accuracy. Let us set the number of trees to be 1,000 to check if our model is performing well.
+![forest.jpg](forest.jpg)
+
+### Conclusion
+
+In ML, there is no specific model or an algorithm which can give 100% result to every single dataset. We need to understand the data before we apply any algorithm and build our model depending on the desired result. This dataset gives us 100% accuracy, which is nearly impossible. From the above models, RandomForest gives optimal accuracy compared to other algorithms because it works best with continuous data and it also applies a nonlinear relationship to the features. By using a this algorithm, you reduce the chances of overfitting and the variance in the data which thus leads to better accuracy.
 
 
 
  
+
+
+
  
 
 
 
-List of references
-https://www.python.org/
-https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
-https://en.wikipedia.org/wiki/Iris_flower_data_set
-http://archive.ics.uci.edu/ml/index.php
-http://cs231n.github.io/python-numpy-tutorial/
-http://cs231n.github.io/python-numpy-tutorial/
-https://pythontips.com/2013/07/30/20-python-libraries-you-
+### List of references
+####https://www.python.org/
+#### https://www.sas.com/en_ie/insights/analytics/machine-learning.html#machine-learning-users
+#### https://en.wikipedia.org/wiki/Iris_flower_data_set
+#### http://archive.ics.uci.edu/ml/index.php
+#### http://cs231n.github.io/python-numpy-tutorial/
+#### http://cs231n.github.io/python-numpy-tutorial/
+#### https://pythontips.com/2013/07/30/20-python-libraries-you-
+#### https://www.anaconda.com
+#### https://code.visualstudio.com/
+####  https://www.python.org/
+####  https://github.com/
+####  https://en.wikipedia.org/wiki/GitHub
+####  https://en.wikipedia.org/wiki/Iris_flower_data_set
+#### https://stackoverflow.com/questions/36967126/why-do-i-get-good-accuracy-with-iris-dataset-with-a-single-hidden-node
+#### https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+#### https://en.wikipedia.org/wiki/Box_plot
+#### https://pythonspot.com/matplotlib-pie-chart/
+####http://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/
+#### https://stackoverflow.com/questions/1985856/how-to-make-a-3d-scatter-plot-in-pytho
+#### https://rpubs.com/rpadebet/26982
+#### https://gist.github.com
 
-[1] https://www.anaconda.com/
-[2] https://code.visualstudio.com/
-[3] https://www.python.org/
-[4] https://github.com/
-[5] https://en.wikipedia.org/wiki/GitHub
-[6] https://en.wikipedia.org/wiki/Iris_flower_data_set
-[7] https://stackoverflow.com/questions/36967126/why-do-i-get-good-accuracy-with-iris-dataset-with-a-single-hidden-node
-[8] https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
-[9] https://en.wikipedia.org/wiki/Box_plot
-
-[11] https://pythonspot.com/matplotlib-pie-chart/
-[12] http://www.dummies.com/education/math/statistics/how-to-interpret-a-scatterplot/
-[13] https://stackoverflow.com/questions/1985856/how-to-make-a-3d-scatter-plot-in-python
-[14] Image on cover page: https://xantheunwinart.deviantart.com/art/iris-flower-289614269
-[15] https://rpubs.com/rpadebet/269829
-[16] https://gist.github.com
-[17][20] http://www.learn4master.com/algorithms/visualize-iris-dataset-using-python
 
 
 
