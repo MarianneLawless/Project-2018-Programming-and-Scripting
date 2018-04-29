@@ -313,7 +313,7 @@ Let us look at the box plot of the dataset, which shows us the visual representa
 In [26]: import seaborn as sns
 sns.boxplot(dat = iris_data,width=0.5,fliersize=5)
  sns.set(rc={'figure.figsize':(2,5)})
- ![Sns-plot.png](Sns-plot.png)
+ ![snsplot.jpg](snsplot.jpg)
  
 
 
