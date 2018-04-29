@@ -20,7 +20,7 @@ to assist with these calculations.
 * Wtite a summary of my investigations
 * Included supporting tables and graphics of which I have used.
 
-# Iris data set
+## Iris data set
 
 ## Because the iris data is so popular in machine learning it is frequently used in python.
 
@@ -63,12 +63,13 @@ Iris data set has become a famous data set for machine learning, because it turn
 This data set consists of one hundred and fifty rows with five columns, including the name of the species of the iris type. Each row represents one flower.
 The other four columns each contain, the four measurements collected.
 
-## Machine Learning Terminology
+### Machine Learning Terminology
 Each row is known as an observation, some equivalent terms are sample, examples, instance and records. Thus, the iris data set has one hundred and fifty observations.
 Each column is known as a feature, some equivalent terms are predictor, attribute, independent variable, input, regressor and covariate. The iris data set has four features. 
 
 
-# 1 Before starting the project some programs, files and libraries were downloaded and installed
+### 1
+### Before starting the project some programs, files and libraries were downloaded and installed
     Python version 3.6 downloaded via Anaconda3
     Visual Studio Code version 1.21.1 downloaded and set up with Github
     Iris dataset downloaded from UCI website 
@@ -79,7 +80,7 @@ import csv
 import pandas as pd
 import numpy as np
 
-# Before commencing with my project , I did a quick test run to ensure I had the required libraries needed to assist me with my project.
+### Before commencing with my project , I did a quick test run to ensure I had the required libraries needed to assist me with my project.
 I ran this in Visual Studio Code 
 import sys
 print("Pyhton: {}".format(sys.version))
@@ -95,11 +96,9 @@ Pyhton: 3.6.3 |Anaconda, Inc.| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 b
 numpy: <module 'numpy.version' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\numpy\\version.py'
 matplotlib <module 'matplotlib' from 'C:\\Users\\Marianne\\Anaconda3\\lib\\site-packages\\matplotlib\\__init__.py'>
 
-# Marianne Lawless
-#Programming and Scripting Project 2018
-# Iris dataset downloaded from https://archive.ics.uci.edu/ml/datasets/iris
+### Iris dataset downloaded from https://archive.ics.uci.edu/ml/datasets/iris
 
-## import numpy # Read data file into array 
+### import numpy # Read data file into array 
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 
 data[0] # Access the first line of data file#
@@ -151,20 +150,13 @@ numpy.min (data[:,3]) # Minimum Lenght Petal Width
 
 
 # 2 
-
-
-
-
-
-
-
-
-
-
-
-
-
 The following Python script that reads the Iris data set in and prints the four numerical values on each row in a nice format. That is, on the screen shouuld be printed the petal length, petal width, sepal length and sepal width, and these values should have the decimal places aligned, with a space between the columns. this script also includes the type of species of Iris.
+
+with open("data/iris.csv") as f: #Open the file and automatically close 
+  for line in f: #loops through each line in the file, and prints the lines in the following format
+    print('{:4} {:4} {:4} {:4}'.format(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3]))
+    
+
 
 
 
