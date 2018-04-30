@@ -215,19 +215,19 @@ mean = numpy.mean(mydata)
 
 ### This is a single csvfile representing the Petal Lenght of the Iris data set
 
-import numpy
-mydata = numpy.genfromtxt("data/PL.csv" ,delimiter=",")
+* import numpy
+* mydata = numpy.genfromtxt("data/PL.csv" ,delimiter=",")
 
-mean = numpy.mean(mydata)
+* mean = numpy.mean(mydata)
 5.8
 
-max = numpy.max(mydata)
+* max = numpy.max(mydata)
 7.9
 
-min = numpy.min(mydata)
+* min = numpy.min(mydata)
 4.30
 
-sum = numpy.sum(mydata)
+* sum = numpy.sum(mydata)
 870.29
 
 ![PL](PL.jpg)
@@ -235,19 +235,19 @@ sum = numpy.sum(mydata)
 
 ### This is a single csvfile representing the Petal Width of the Iris data set
 
-import numpy
-mydata = numpy.genfromtxt("data/PW.csv" ,delimiter=",")
+* import numpy
+* mydata = numpy.genfromtxt("data/PW.csv" ,delimiter=",")
 
-mean = numpy.mean(mydata)
+* mean = numpy.mean(mydata)
 1.2
 
-max = numpy.max(mydata)
+* max = numpy.max(mydata)
 2.5
 
-min = numpy.min(mydata)
+* min = numpy.min(mydata)
 .01
 
-sum = numpy.sum(mydata)
+* sum = numpy.sum(mydata)
 177.5
 
 ![PW](PW.jpg)
@@ -292,7 +292,8 @@ iris_data.head()
 
 As mentioned above, there are three types of flowers in our dataset. Let us look at the target names of each of the flower.
  iris.target_names
-![target-jpg](target.jpg)
+ 
+![iris target-jpg](iris-target.jpg)
       
 ### Understanding the data
 This is relatively a very small data set with 150 samples. Since the dataframe has four features (Sepal length, sepal width, petal length and petal width) with 150 samples belonging to either of the three target classes, our matrix will be: 
@@ -361,6 +362,8 @@ Using some of the commonly used algorithms, we will be training our model to che
 
 In ML, there is no specific model or an algorithm which can give 100% result to every single dataset. We need to understand the data before we apply any algorithm and build our model depending on the desired result. This dataset gives us 100% accuracy, which is nearly impossible. From the above models, RandomForest gives optimal accuracy compared to other algorithms because it works best with continuous data and it also applies a nonlinear relationship to the features. By using a this algorithm, you reduce the chances of overfitting and the variance in the data which thus leads to better accuracy.
 
+With the rapid development of technology, Artificial Intelligence has been applied in many fields. Machine learning is the most fundamental approach to achieve Artificial Intelligence. This project describes the work principle of machine learning. In addition, a case study of Iris flower recognition to introduce the workflow of machine learning in pattern recognition is shown. With this basic data set, simple yet fundamental to programming and scripting. I have learnt a lot through the online lectures, tasks set and discussion form throughout this module and subsequently this project. There is a lot to learn, but I do believe, that the best way forward for me is continuing with a pragmatic approach, as stated by our lecturer is most definitely the very best way to achieve a good knowledge of this module. I will continue to explore additional codes I can create and run with this data set, and at the same time, I will recap on my work done, and edit where necessary. 
+
 
 
  ### List of references
@@ -386,6 +389,9 @@ In ML, there is no specific model or an algorithm which can give 100% result to 
 #### https://stackoverflow.com/questions/1985856/how-to-make-a-3d-scatter-plot-in-pytho
 #### https://rpubs.com/rpadebet/26982
 #### https://gist.github.com
+
+![iris](iris.jpg)
+
 
 
 
