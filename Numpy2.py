@@ -1,9 +1,16 @@
+# Marianne Lawless 2018 Project
+# Iris data Set 
 
-import numpy # Read data file into array 
+import numpy
 
-data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+mydata = numpy.genfromtxt("data/iris2.csv" ,delimiter=",")
 
-firstcol = data[:,0]
-meanfirst = numpy.mean(data[:,0])
+fcol = mydata[:,0]
+meanfcol = numpy.mean(mydata[:,0])
 
-print ("Average of first Column is: ", meanfirst)
+print("Average of first column is : ", meanfcol)
+
+
+
+
+
